@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
 
-  
+
   <!-- Swiper CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
-  
+
 
   <title>Rouge</title>
 </head>
@@ -373,6 +375,7 @@
   </section>
 
 
+  <!-- ===== BOOK TABLE SECTION (fixed) ===== -->
   <section class="book-table bg-light">
     <!-- Decorative shapes -->
     <div class="leaf-shape"><img src="assets/images/table-leaves-shape.png" alt=""></div>
@@ -393,7 +396,7 @@
 
         <div class="contact-box">
           <i class="uil uil-phone"></i>
-          <a href="tel:+234-8045682134">+234-8045682134</a>
+          <a href="tel:+234-8045682134" class="contact-phone">+234-8045682134</a>
         </div>
 
         <div class="time-box">
@@ -402,144 +405,346 @@
         </div>
       </div>
 
+
       <div class="see-more-container">
-      <a href="" class="see-more-btn">See More</a>
-
-  </section>
-
-   <section class="section-header section">
-  <div class="container">
-      <p class="subtitle">Our Gallery</p>
-      <h2 class="title">Discover the essence of Rouge </h2>
-      <div class="sec-title-shape">
-        <img src="title-shape.svg" alt="Title Shape">
-
-      <div class="row" id="gallery">
-          <div class="book-table-img-slider" id="icon">
-            <div class="swiper-wrapper">
-              <a href="assets/images/bt1.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt1.jpg)"></a>
-              <a href="assets/images/bt2.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt2.jpg)"></a>
-              <a href="assets/images/bt3.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt3.jpg)"></a>
-              <a href="assets/images/bt4.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt4.jpg)"></a>
-              <a href="assets/images/bt1.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt1.jpg)"></a>
-              <a href="assets/images/bt2.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt2.jpg)"></a>
-              <a href="assets/images/bt3.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt3.jpg)"></a>
-              <a href="assets/images/bt4.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
-                style="background-image: url(assets/images/bt4.jpg)"></a>
-            </div>
-
-            <div class="swiper-button-wp">
-              <div class="swiper-button-prev swiper-button">
-                <i class="uil uil-angle-left"></i>
-              </div>
-              <div class="swiper-button-next swiper-button">
-                <i class="uil uil-angle-right"></i>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+        <a href="#" class="see-more-btn" id="see-more-btn">See More</a>
       </div>
-
-
     </div>
-    </div>
-
-       <div class="see-more-container">
-      <a href="" class="see-more-btn">See More</a>
-
   </section>
+
 
 
   <section class="section-header section">
-  <div class="container">
+    <div class="container">
+      <p class="subtitle">Our Gallery</p>
+      <h2 class="title">Discover the essence of Rouge</h2>
+
+      <div class="sec-title-shape">
+        <img src="title-shape.svg" alt="Title Shape">
+      </div>
+
+      <div class="row" id="gallery">
+        <div class="book-table-img-slider swiper">
+          <div class="swiper-wrapper">
+            <a href="assets/images/bt1.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+              style="background-image: url(assets/images/bt1.jpg)">
+              <img src="assets/images/bt1.jpg" alt="Gallery Image" class="slide-img" />
+            </a>
+            <a href="assets/images/bt2.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+              style="background-image: url(assets/images/bt2.jpg)">
+              <img src="assets/images/bt2.jpg" alt="Gallery Image" class="slide-img" />
+            </a>
+            <a href="assets/images/bt3.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+              style="background-image: url(assets/images/bt3.jpg)">
+              <img src="assets/images/bt3.jpg" alt="Gallery Image" class="slide-img" />
+            </a>
+            <a href="assets/images/bt4.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+              style="background-image: url(assets/images/bt4.jpg)">
+              <img src="assets/images/bt4.jpg" alt="Gallery Image" class="slide-img" />
+            </a>
+            <a href="assets/images/bt4.jpg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+              style="background-image: url(assets/images/bt4.jpg)">
+              <img src="assets/images/bt3.jpg" alt="Gallery Image" class="slide-img" />
+            </a>
+          </div>
+
+          <div class="swiper-button-wp">
+            <div class="swiper-button-prev swiper-button">
+              <i class="uil uil-angle-left"></i>
+            </div>
+            <div class="swiper-button-next swiper-button">
+              <i class="uil uil-angle-right"></i>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="see-more-container">
+        <a href="#" class="see-more-btn">See More</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section-header section">
+    <div class="container">
       <p class="subtitle">Our Team</p>
       <h2 class="title">Meet our Chefs</h2>
       <div class="sec-title-shape">
         <img src="title-shape.svg" alt="Title Shape">
-     
+
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper team-slider">
+        <div class="swiper-wrapper">
+          <!-- Team Member -->
+          <div class="swiper-slide">
+            <div class="team-box text-center">
+              <div class="team-img back-img" style="background-image: url(assets/images/chef\ 1.jpg);"></div>
+              <h3 class="h3-title">Chef Adrien Marchand</h3>
+              <ul class="social-icon">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-box text-center">
+              <div class="team-img back-img" style="background-image: url(assets/images/chef\ 2.jpg);"></div>
+              <h3 class="h3-title">Chef Chantal Lefèvre</h3>
+              <ul class="social-icon">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-box text-center">
+              <div class="team-img back-img" style="background-image: url(assets/images/chef\ 3.jpg);"></div>
+              <h3 class="h3-title">Chef Chantal Lefèvre</h3>
+              <ul class="social-icon">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-box text-center">
+              <div class="team-img back-img" style="background-image: url(assets/images/chef\ 4.jpg);"></div>
+              <h3 class="h3-title">Chef Laurent Bellefeuille</h3>
+              <ul class="social-icon">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-box text-center">
+              <div class="team-img back-img" style="background-image: url(assets/images/chef\ 5.jpg);"></div>
+              <h3 class="h3-title">Chef Étienne Rouge</h3>
+              <ul class="social-icon">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"><i class="uil uil-angle-left"></i></div>
+        <div class="swiper-button-next"><i class="uil uil-angle-right"></i></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+           <!-- testimonials -->
+  
+ <section class="testimonials-section" id="testimonial-area">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="subtitle">Testimonials</p>
+      <h2 class="title">What Our Clients Say</h2>
+      <img src="title-shape.svg" alt="divider" class="title-shape">
     </div>
 
-    <!-- Swiper -->
-    <div class="swiper team-slider">
-      <div class="swiper-wrapper">
-        <!-- Team Member -->
-        <div class="swiper-slide">
-          <div class="team-box text-center">
-            <div class="team-img back-img" style="background-image: url(assets/images/chef\ 1.jpg);"></div>
-            <h3 class="h3-title">Chef Adrien Marchand</h3>
-            <ul class="social-icon">
-              <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-              <li><a href="#"><i class="uil uil-instagram"></i></a></li>
-              <li><a href="#"><i class="uil uil-youtube"></i></a></li>
-            </ul>
-          </div>
-        </div>
+    <div class="testimonials-wrapper">
+      <!-- Static left image -->
+      <div class="testimonials-img">
+        <img src="assets/images/testimonial-img.png" alt="Testimonials Decoration">
+      </div>
 
-        <div class="swiper-slide">
-          <div class="team-box text-center">
-            <div class="team-img back-img" style="background-image: url(assets/images/chef\ 2.jpg);"></div>
-            <h3 class="h3-title">Chef Chantal Lefèvre</h3>
-            <ul class="social-icon">
-              <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-              <li><a href="#"><i class="uil uil-instagram"></i></a></li>
-              <li><a href="#"><i class="uil uil-youtube"></i></a></li>
-            </ul>
+      <!-- Scrolling testimonials -->
+      <div class="testimonials-content" data-animated="true" data-direction="left" data-speed="slow">
+        <div class="testimonial-list">
+          <div class="testimonial-card pos-1 active" data-position="1">
+            <div class="author-img">
+              <img src="./assets/images/profile 1.jpg" alt="Sarah Johnson">
+            </div>
+            <div class="testimonial-content">
+              <span><i class="uil uil-comment-alt-message"></i></span>
+              <h3>“Amazing experience! Loved the food and the atmosphere.”</h3>
+              <div class="stars">★★★★☆</div>
+            </div>
+            <div class="author-name">Sarah Johnson</div>
+            <div class="author-role">Customer</div>
           </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="team-box text-center">
-            <div class="team-img back-img" style="background-image: url(assets/images/chef\ 3.jpg);"></div>
-            <h3 class="h3-title">Chef Chantal Lefèvre</h3>
-            <ul class="social-icon">
-              <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-              <li><a href="#"><i class="uil uil-instagram"></i></a></li>
-              <li><a href="#"><i class="uil uil-youtube"></i></a></li>
-            </ul>
+          <div class="testimonial-card pos-2" data-position="2">
+            <div class="author-img">
+              <img src="./assets/images/profile 2.jpg" alt="Michael Lee">
+            </div>
+            <div class="testimonial-content">
+              <span><i class="uil uil-comment-alt-message"></i></span>
+              <h3>“The staff were friendly and professional. Highly recommend.”</h3>
+              <div class="stars">★★★★★</div>
+            </div>
+            <div class="author-name">Michael Lee</div>
+            <div class="author-role">Regular Visitor</div>
           </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="team-box text-center">
-            <div class="team-img back-img" style="background-image: url(assets/images/chef\ 4.jpg);"></div>
-            <h3 class="h3-title">Chef Laurent Bellefeuille</h3>
-            <ul class="social-icon">
-              <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-              <li><a href="#"><i class="uil uil-instagram"></i></a></li>
-              <li><a href="#"><i class="uil uil-youtube"></i></a></li>
-            </ul>
+          <div class="testimonial-card pos-3" data-position="3">
+            <div class="author-img">
+              <img src="./assets/images/profile 3.jpg" alt="Emma Brown">
+            </div>
+            <div class="testimonial-content">
+              <span><i class="uil uil-comment-alt-message"></i></span>
+              <h3>“Best service ever! I’ll definitely be coming back.”</h3>
+              <div class="stars">★★★★☆</div>
+            </div>
+            <div class="author-name">Emma Brown</div>
+            <div class="author-role">Food Blogger</div>
           </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="team-box text-center">
-            <div class="team-img back-img" style="background-image: url(assets/images/chef\ 5.jpg);"></div>
-            <h3 class="h3-title">Chef Étienne Rouge</h3>
-            <ul class="social-icon">
-              <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-              <li><a href="#"><i class="uil uil-instagram"></i></a></li>
-              <li><a href="#"><i class="uil uil-youtube"></i></a></li>
-            </ul>
+          <div class="testimonial-card pos-4" data-position="4">
+            <div class="author-img">
+              <img src="./assets/images/profile 4.jpg" alt="James Smith">
+            </div>
+            <div class="testimonial-content">
+              <span><i class="uil uil-comment-alt-message"></i></span>
+              <h3>“Loved the ambience and the quality of dishes.”</h3>
+              <div class="stars">★★★★★</div>
+            </div>
+            <div class="author-name">James Smith</div>
+            <div class="author-role">Customer</div>
           </div>
         </div>
       </div>
-
-      <!-- Navigation -->
-      <div class="swiper-button-prev"><i class="uil uil-angle-left"></i></div>
-      <div class="swiper-button-next"><i class="uil uil-angle-right"></i></div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
+
+<button class="scrolltop" id="scrollTopBtn">
+  <i class="uil uil-angle-up"></i>
+</button>
+
+
+<!-- FAQ -->
+
+<section class="faq-section" style="background-image: url(assets/images/faq-bg.png);">
+  <div class="faq-container">
+    <header class="faq-header">
+      <p class="sub-title">FAQs</p>
+      <h2>Frequently <span>Asked Questions</span></h2>
+      <img src="assets/images/title-shape.svg" alt="" class="title-shape">
+    </header>
+
+    <div class="faq-list">
+      <!-- 1. Ordering and Payment -->
+      <button class="faq-topic">Ordering and Payment</button>
+      <div class="faq-content">
+        <button class="faq-question">How do I place an order?</button>
+        <div class="faq-answer">
+          <p>You can place an order by browsing our menu, adding items to your cart, and checking out with your preferred payment method.</p>
+        </div>
+
+        <button class="faq-question">What payment methods do you accept?</button>
+        <div class="faq-answer">
+          <p>We accept debit/credit cards, PayPal, and bank transfers.</p>
+        </div>
+
+        <button class="faq-question">How do I change or update my order?</button>
+        <div class="faq-answer">
+          <p>Contact our support team as soon as possible to update your order before it’s processed.</p>
+        </div>
+
+        <button class="faq-question">How do I cancel an order?</button>
+        <div class="faq-answer">
+          <p>Please reach out to our support team immediately to cancel your order and request a refund if eligible.</p>
+        </div>
+      </div>
+
+      <!-- 2. Delivery Information -->
+      <button class="faq-topic">Delivery Information</button>
+      <div class="faq-content">
+        <button class="faq-question">How long does delivery take?</button>
+        <div class="faq-answer">
+          <p>Delivery time depends on your location and order size. Typically, it takes 30–45 minutes.</p>
+        </div>
+
+        <button class="faq-question">Can I track my order?</button>
+        <div class="faq-answer">
+          <p>Yes! You’ll receive a tracking link once your order is on the way.</p>
+        </div>
+
+        <button class="faq-question">Do you offer free delivery?</button>
+        <div class="faq-answer">
+          <p>We occasionally offer free delivery on orders above a certain amount or during promotions.</p>
+        </div>
+
+        <button class="faq-question">Do you deliver outside the city?</button>
+        <div class="faq-answer">
+          <p>We currently deliver within selected areas. Check our delivery page for more info.</p>
+        </div>
+      </div>
+
+      <!-- 3. Refunds and Returns -->
+      <button class="faq-topic">Refunds and Returns</button>
+      <div class="faq-content">
+        <button class="faq-question">How do I request a refund?</button>
+        <div class="faq-answer">
+          <p>If there’s an issue with your order, contact our support team within 24 hours for assistance.</p>
+        </div>
+
+        <button class="faq-question">What is your refund policy?</button>
+        <div class="faq-answer">
+          <p>Refunds are processed for valid complaints such as incorrect or missing items, based on our policy terms.</p>
+        </div>
+      </div>
+
+      <!-- 4. Customer Support -->
+      <button class="faq-topic">Customer Support</button>
+      <div class="faq-content">
+        <button class="faq-question">How can I reach your support team?</button>
+        <div class="faq-answer">
+          <p>Contact us via email at <a href="mailto:support@restaurant.com">support@restaurant.com</a> or call +1 (555) 555-5555.</p>
+        </div>
+
+        <button class="faq-question">What are your support hours?</button>
+        <div class="faq-answer">
+          <p>Our support is available daily from 9:00 AM to 10:00 PM.</p>
+        </div>
+
+        <button class="faq-question">I have an issue with my order. What should I do?</button>
+        <div class="faq-answer">
+          <p>Please contact our support immediately. We’ll resolve your issue as soon as possible.</p>
+        </div>
+      </div>
+
+      <!-- 5. Account Management -->
+      <button class="faq-topic">Account Management</button>
+      <div class="faq-content">
+        <button class="faq-question">How do I create an account?</button>
+        <div class="faq-answer">
+          <p>Click “Sign Up” on our website and follow the prompts to register.</p>
+        </div>
+
+        <button class="faq-question">How do I update my account info?</button>
+        <div class="faq-answer">
+          <p>Log into your account, go to “My Profile,” and update your details.</p>
+        </div>
+
+        <button class="faq-question">How do I reset my password?</button>
+        <div class="faq-answer">
+          <p>Click “Forgot Password” on the login page and follow the reset instructions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 
@@ -550,11 +755,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <!-- Swiper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="./assets/js/main.js"></script>
+
+
 
 </body>
 
